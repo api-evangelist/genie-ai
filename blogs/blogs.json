@@ -1,0 +1,14 @@
+{
+  "repo": "genie-ai",
+  "feeds": [
+    {
+      "source": "https://www.genieai.co/en-gb/pricing",
+      "feed_url": "https://www.genieai.co/en-gb/pricing",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-25T15:00:33Z"
+}

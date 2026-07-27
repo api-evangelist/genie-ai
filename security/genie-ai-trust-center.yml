@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://security.genieai.co/
+url: https://security.genieai.co/
+certifications:
+- ISO 27001
+- SOC 2 Type 2
+- GDPR
+evidence:
+- source: https://www.genieai.co/security
+  keywords:
+  - iso 27001
+  - iso/iec 27001
+  - gdpr
+- source: https://security.genieai.co/
+  kind: trust-center
+  note: Dedicated SafeBase-style trust center; ISO 27001 + SOC 2 Type 2 + GDPR
+    confirmed across the security page and public vendor listings.
