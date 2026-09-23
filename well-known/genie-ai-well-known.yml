@@ -2,20 +2,22 @@ generated: '2026-07-19'
 method: searched
 source: live probes of genieai.co hosts
 host: https://www.genieai.co
-documents:
-- path: /.well-known/security.txt
-  host: www.genieai.co
-  status: 404
-- path: /.well-known/security.txt
-  host: app.genieai.co
-  status: 403
-- path: /.well-known/openid-configuration
-  host: app.genieai.co
-  status: 403
-- path: /.well-known/openid-configuration
-  host: api.genieai.co
-  status: 0
-  note: host does not resolve
-notes: No public /.well-known discovery documents were served. The API and MCP
-  integrations are Enterprise-gated with no public developer surface. Absence is
-  valid, expected data for a stub-tier legal-AI provider.
+notes: No public /.well-known discovery documents were served. The API and MCP integrations are Enterprise-gated
+  with no public developer surface. Absence is valid, expected data for a stub-tier legal-AI provider.
+hosts:
+- host: https://www.genieai.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 0
+    note: host does not resolve
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
