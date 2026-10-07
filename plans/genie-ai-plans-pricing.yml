@@ -1,0 +1,61 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.genieai.co/en-gb/pricing
+sources:
+- https://www.genieai.co/en-gb/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Legal AI SaaS pricing page; API & MCP integrations only listed as an Enterprise feature, not separately
+  priced. Enterprise shown as 'Custom' in the table but FAQ states 'from £450/month'.
+plan_count: 6
+currency: GBP
+plans:
+- name: Free
+  price_text: £0/month
+  price: 0
+  currency: GBP
+  period: month
+  unit: account
+  included_quota: Full AI Document Toolkit, 500+ templates, limited AI tokens; exports locked until upgrade
+- name: Pro (annual)
+  price_text: £45 (£540/year) per month | billed annually
+  currency: GBP
+  period: month
+  unit: 1 user
+  included_quota: Insights from 50 docs, 10x Free plan AI tokens (~5 documents per month)
+- name: Pro (monthly)
+  price_text: £56 per month | cancel any time
+  price: 56
+  currency: GBP
+  period: month
+  unit: 1 user
+  included_quota: Insights from 50 docs, 10x Free plan AI tokens
+- name: Business (annual)
+  price_text: £189 (£2,268/year) per month | billed annually
+  currency: GBP
+  period: month
+  unit: 5 users
+  included_quota: Insights from 250 docs, 5x Pro plan tokens shared across team
+- name: Business (monthly)
+  price_text: £240 per month | cancel any time
+  price: 240
+  currency: GBP
+  period: month
+  unit: 5 users
+  included_quota: Insights from 250 docs, 5x Pro plan tokens
+- name: Enterprise
+  price_text: Custom
+  currency: GBP
+  period: none
+  included_quota: Unlimited users, unlimited docs insights, unlimited AI tokens, SSO, API & MCP integrations;
+    FAQ states "starts from £450/month"
