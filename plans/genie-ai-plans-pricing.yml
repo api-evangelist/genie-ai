@@ -59,3 +59,60 @@ plans:
   period: none
   included_quota: Unlimited users, unlimited docs insights, unlimited AI tokens, SSO, API & MCP integrations;
     FAQ states "starts from £450/month"
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - metered
+  - seat
+  units:
+  - object
+  - seat
+  plans:
+  - name: Free
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - object
+    periods:
+    - month
+  - name: Pro (annual)
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Pro (monthly)
+    access: other
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Business (annual)
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Business (monthly)
+    access: other
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods:
+    - month
+  - name: Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
